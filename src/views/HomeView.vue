@@ -10,6 +10,7 @@
 
 <style>
 	body{
+		color: tomato;
 		display:flex;
 		align-items: center;
 		justify-content: center;
