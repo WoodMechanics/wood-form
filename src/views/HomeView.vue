@@ -10,7 +10,8 @@
 
 <style>
 	body{
-		color: tomato;
+		font-size: 40px;
+		color: rgb(28, 29, 44);
 		display:flex;
 		align-items: center;
 		justify-content: center;
