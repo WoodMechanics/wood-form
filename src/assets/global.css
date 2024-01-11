@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Ysabeau';
+	src: url('../assets/fonts/Ysabeau-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Ysabeau-SemiBold';
+	src: url('../assets/fonts/Ysabeau-SemiBold.ttf');
+}
+
+:root {
+	--font-main: 'Ysabeau', sans-serif;
+	--font-bold: 'Ysabeau-SemiBold', sans-serif;
+}
