@@ -7,8 +7,8 @@ import LinkButton from '../../common/LinkButton.vue'
 	<body>
 		<nav>
 			<div>
-				<a href="#">Overview</a>
-				<a href="#">Features</a>
+				<a href="#overview">Overview</a>
+				<a href="#features">Features</a>
 			</div>
 			<div class="rightSide">
 				<RouterLink to="/sign-in">Sign In</RouterLink>
@@ -21,8 +21,8 @@ import LinkButton from '../../common/LinkButton.vue'
 <style>
 nav {
 	width: 100%;
-	background-color: #efeeee;
-	box-shadow: 0 2px 5px #9d9d9d;
+	background-color: var(--color-header);
+	border-bottom: 1px solid var(--color-hover);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -34,14 +34,14 @@ nav {
 
 a {
 	text-decoration: none;
-	color: #121212;
+	color: var(--color-text);
 	margin: 10px 40px;
 	font-size: 20px;
+	transition-duration: .5s;
 
 	&:hover {
-		transition-duration: 0.4s;
-		color: #28297a;
-		text-shadow: 0 0 1px #28297a;
+		transition-duration: 0.5s;
+		color: var(--color-text-hover);
 	}
 }
 .rightSide {
