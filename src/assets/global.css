@@ -1,14 +1,26 @@
 @font-face {
-	font-family: 'Ysabeau';
-	src: url('../assets/fonts/Ysabeau-Medium.ttf');
+	font-family: 'WixMadeforDisplay';
+	src: url('../assets/fonts/WixMadeforDisplay-Medium.ttf');
 }
 
 @font-face {
-	font-family: 'Ysabeau-SemiBold';
-	src: url('../assets/fonts/Ysabeau-SemiBold.ttf');
+	font-family: 'WixMadeforDisplay-Bold';
+	src: url('../assets/fonts/WixMadeforDisplay-Bold.ttf');
 }
 
 :root {
-	--font-main: 'Ysabeau', sans-serif;
-	--font-bold: 'Ysabeau-SemiBold', sans-serif;
+	/* fonts */
+	--font-main: 'WixMadeforDisplay', sans-serif;
+	--font-bold: 'WixMadeforDisplay-Bold', sans-serif;
+
+	/* colors */
+	--color-header: #b5ceb9;
+	--color-background: #d2f0d5;
+	--color-background-hover: #739e7a;
+	--color-text: #141414;
+	--color-secondary: #404040;
+	--color-text-hover: #9C4A1A;
+	--color-links: #183331;
+	--color-hover: #527074;
+	--color-unknown-image: #c0c9c1;	
 }
