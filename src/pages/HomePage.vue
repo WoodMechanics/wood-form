@@ -3,17 +3,13 @@
 <template>
 	<main>
 		<img src="../assets/logo.svg" alt="Vue.js logo" />
-		Какой-нибудь текст
+		ЭТО ГЛАВНАЯ СТРАНИЦА
 	</main>
 </template>
 
-<style>
-
-body {
+<style scoped>
+main {
 	font-family: var(--font-bold);
-	color: #181818;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	color: var(--color-text-hover);
 }
 </style>
