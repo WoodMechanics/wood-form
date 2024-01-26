@@ -11,7 +11,7 @@ import LinkButton from '../../common/LinkButton.vue'
 			</div>
 			<div class="rightSide">
 				<RouterLink to="/sign-in">Sign In</RouterLink>
-				<LinkButton></LinkButton>
+				<LinkButton />
 			</div>
 		</nav>
 </template>
