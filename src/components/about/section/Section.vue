@@ -39,12 +39,5 @@
 	& .phoneImg {
 		flex: 1;
 	}
-  & .section7Img {
-		width: 270px;
-		height: 400px;
-		background-color: var(--color-unknown-image);
-		border-radius: 7px;
-		box-shadow: 0 2px 15px #181818;
-	}
 }
 </style>
