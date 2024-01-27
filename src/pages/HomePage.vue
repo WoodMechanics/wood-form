@@ -2,7 +2,6 @@
 
 <template>
 	<main>
-		<img src="../assets/logo.svg" alt="Vue.js logo" />
 		ЭТО ГЛАВНАЯ СТРАНИЦА
 	</main>
 </template>
