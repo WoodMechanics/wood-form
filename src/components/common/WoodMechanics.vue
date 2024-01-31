@@ -13,7 +13,7 @@ const currentYear = ref(new Date().getFullYear())
 </template>
 
 <style scoped>
-.logoName *{
+.logoName * {
 	margin: 0;
 }
 .logoName {
