@@ -69,7 +69,7 @@ h4 {
 		width: 20px;
 		transition-duration: 0.2s;
 	}
-	& img:focus,
+	img:focus,
 	img:active {
 		transition-duration: 0.2s;
 		transform: scale(80%);

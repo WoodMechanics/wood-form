@@ -7,7 +7,9 @@ import { RouterLink } from 'vue-router'
 			<h1>Wood-Forms</h1>
 			<RouterLink to="/about">Overview</RouterLink>
 			<div class="inputarea">
-				<button type="submit"><img src="../../../assets/icons/icons8-search.svg" alt="search" /></button>
+				<button type="submit">
+					<img src="../../../assets/icons/icons8-search.svg" alt="search" />
+				</button>
 				<input type="text" placeholder="Search" />
 			</div>
 		</div>
@@ -55,19 +57,19 @@ nav {
 				color: var(--color-text);
 				box-shadow: 0 0 5px var(--color-hover);
 			}
-			& button {
+			button {
 				background-color: inherit;
 				border: none;
 				position: relative;
 				left: 3em;
 				z-index: 1;
 
-				& img {
+				img {
 					width: 25px;
 					margin: 0;
 					transition-duration: 0.2s;
 				}
-				& img:active {
+				img:active {
 					transform: scale(90%);
 					transition-duration: 0.2s;
 				}
