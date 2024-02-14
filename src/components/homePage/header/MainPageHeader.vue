@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router'
 			<h1>Wood-Forms</h1>
 			<RouterLink to="/about">Overview</RouterLink>
 			<div class="inputarea">
-				<button type="submit"><img src="../../../assets/icons/icons8-search.svg" alt="" /></button>
+				<button type="submit"><img src="../../../assets/icons/icons8-search.svg" alt="search" /></button>
 				<input type="text" placeholder="Search" />
 			</div>
 		</div>

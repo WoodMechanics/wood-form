@@ -42,7 +42,7 @@ import ControlButton from './ControlButton.vue'
 				<div class="cardText">
 					<p>MyForm1</p>
 					<div>
-						<img src="../../../assets/icons/list.svg" alt="" />
+						<img src="../../../assets/icons/list.svg" alt="Form" />
 						<p><i>here goes date</i></p>
 					</div>
 				</div>

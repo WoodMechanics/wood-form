@@ -2,7 +2,7 @@
 	<div>
 		<img
 			src="https://kstatic.googleusercontent.com/files/e6cc39df1fc54b2cf1f86e429554f094be916ed5d65856b9ebbf2745577678aae2ec0549802ef14b997b6de066ebe3f2fde97ea98cb0f67c35d500708f368b87"
-			alt=""
+			alt="cooperate"
 		/>
 		<h4>Build forms and analyze results together</h4>
 		<p>
@@ -13,7 +13,7 @@
 	<div>
 		<img
 			src="https://kstatic.googleusercontent.com/files/ff3f08e4e57df98669aea7a40dd55ed3eee93b00b4e661d076a820ee4ca9165f6a810bf1071093c8662f49402fe30ae56cbbaa700b0c08d15ff8aec5315beea1"
-			alt=""
+			alt="progress"
 		/>
 		<h4>Work with clean response data</h4>
 		<p>
@@ -24,7 +24,7 @@
 	<div>
 		<img
 			src="https://kstatic.googleusercontent.com/files/cff121456527424642798945932a09974a2fa0d0f95e838968bcaeed4513456885478939f9ffb06ebb03dd32e7ddd3dea4bcd2897fc9d956907aab45033bd1d0"
-			alt=""
+			alt="Sharing"
 		/>
 		<h4>Share forms via email, link, or website</h4>
 		<p>

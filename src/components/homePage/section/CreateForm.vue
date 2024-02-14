@@ -10,10 +10,10 @@ import ControlButton from './ControlButton.vue'
 			<div class="leftPart">
 				<ControlButton>
 					<h4>Template Gallery</h4>
-					<img src="../../../assets/icons/scroll-templates.svg" alt="" />
+					<img src="../../../assets/icons/scroll-templates.svg" alt="scroll" />
 				</ControlButton>
 				<hr />
-				<ControlButton><img src="../../../assets/icons/menu-dots.svg" alt="" /></ControlButton>
+				<ControlButton><img src="../../../assets/icons/menu-dots.svg" alt="menu" /></ControlButton>
 			</div>
 		</div>
 		<Gallery>
