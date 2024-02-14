@@ -1,7 +1,7 @@
 <template>
 	<div class="block">
 		<div class="image"></div>
-		<slot></slot>
+		<slot />
 	</div>
 </template>
 <style scoped>
