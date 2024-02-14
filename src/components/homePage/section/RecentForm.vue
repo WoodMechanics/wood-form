@@ -2,11 +2,6 @@
 import Gallery from './Gallery.vue'
 import CardBlock from './CardBlock.vue'
 import ControlButton from './ControlButton.vue'
-
-// let changeImage = document.querySelector('#changeImage')
-// function changeView(){
-// 	console.log(changeImage.src);
-// }
 </script>
 
 <template>
