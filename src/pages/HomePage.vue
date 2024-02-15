@@ -1,17 +1,17 @@
 <script setup>
 import WoodMechanics from '../components/common/WoodMechanics.vue'
-import MainPageHeader from '../components/homepage/header/MainPageHeader.vue'
-import Section from '../components/homepage/section/Section.vue'
-import CreateForm from '../components/homepage/section/CreateForm.vue'
-import RecentForm from '../components/homepage/section/RecentForm.vue'
+import MainHeader from '../components/homePage/header/MainHeader.vue'
+import HomePageSection from '../components/homePage/section/HomePageSection.vue'
+import CreateForm from '../components/homePage/section/SectionCreateForm.vue'
+import RecentForm from '../components/homePage/section/SectionRecentForm.vue'
 </script>
 
 <template>
 	<WoodMechanics />
-	<MainPageHeader />
+	<MainHeader />
 	<main>
-		<Section class="first"><CreateForm/></Section>
-		<Section><RecentForm /></Section>
+		<Section class="first"><CreateForm /></Section>
+		<HomePageSection><RecentForm /></HomePageSection>
 	</main>
 </template>
 
@@ -26,7 +26,7 @@ main {
 	justify-content: center;
 	text-align: center;
 }
-.first{
+.first {
 	background-color: var(--color-unknown-image);
 }
 </style>
