@@ -18,7 +18,6 @@ import ControlButton from './ControlButton.vue'
 				<hr />
 				<ControlButton>
 					<img
-						id="changeImage"
 						src="../../../assets/icons/list-com.svg"
 						title="List view"
 						alt="List view"
