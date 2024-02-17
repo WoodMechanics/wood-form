@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
 				<button type="submit">
 					<img src="../../../assets/icons/icons8-search.svg" alt="search" />
 				</button>
-				<input type="text" placeholder="Search" />
+				<label><input type="text" placeholder="Search" /></label>
 			</div>
 		</div>
 	</nav>
