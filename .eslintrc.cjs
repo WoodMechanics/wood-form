@@ -6,12 +6,15 @@ module.exports = {
 	extends: [
 		'plugin:vue/vue3-essential',
 		'eslint:recommended',
-		'@vue/eslint-config-prettier/skip-formatting'
+		'@vue/eslint-config-prettier/skip-formatting',
+		'plugin:vuejs-accessibility/recommended'
 	],
 	parserOptions: {
 		ecmaVersion: 'latest'
 	},
 	rules: {
-		'vue/multi-word-component-names': 'off'
-	}
+		'vue/multi-word-component-names': 'off',
+		'vuejs-accessibility/label-has-for': 'off'
+	},
+	plugins: ['vuejs-accessibility']
 }
