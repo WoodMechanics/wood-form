@@ -6,8 +6,12 @@ import { RouterView } from 'vue-router'
 	<RouterView />
 </template>
 
-<style>
-::-webkit-scrollbar {
-	display: none;
+<style scoped>
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 </style>

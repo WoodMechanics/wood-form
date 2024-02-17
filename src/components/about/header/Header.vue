@@ -37,7 +37,7 @@ a {
 	font-size: 20px;
 	transition-duration: .5s;
 
-	&:hover {
+	:hover {
 		transition-duration: 0.5s;
 		color: var(--color-text-hover);
 	}

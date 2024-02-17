@@ -14,7 +14,7 @@
 	font-size: 18px;
 	transition-duration: 0.5s;
 
-	&:hover {
+	:hover {
 		border: 1px solid #7e7e7e;
 		background-color: var(--color-background-hover);
 		color: var(--color-background);

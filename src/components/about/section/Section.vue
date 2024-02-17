@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		<slot></slot>
+		<slot />
 	</div>
 </template>
 
@@ -12,23 +12,23 @@
 	width: 80%;
 	height: 700px;
 	margin: 0 0 10px 0;
-	& div {
+	div {
 		flex: 2;
 	}
-	& p {
+	p {
 		font-size: var(--size-text);
 		line-height: var(--text-line-height);
 	}
-	& h1 {
+	h1 {
 		font-size: var(--size-title);
 	}
-	& h2 {
+	h2 {
 		font-size: var(--size-second-title);
 	}
-	& h4 {
+	h4 {
 		font-size: var(--size-third-title);
 	}
-	& .image {
+	.image {
 		margin: 0 50px;
 		height: 75%;
 		flex: 3;
@@ -36,7 +36,7 @@
 		border-radius: 7px;
 		box-shadow: 0 2px 15px #181818;
 	}
-	& .phoneImg {
+	.phoneImg {
 		flex: 1;
 	}
 }
