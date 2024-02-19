@@ -42,10 +42,10 @@ div p {
 	margin: 0;
 }
 .section8Img {
-		width: 270px;
-		height: 400px;
-		background-color: var(--color-unknown-image);
-		border-radius: 7px;
-		box-shadow: 0 2px 15px #181818;
-	}
+	width: 270px;
+	height: 400px;
+	background-color: var(--color-unknown-image);
+	border-radius: 7px;
+	box-shadow: 0 2px 15px #181818;
+}
 </style>

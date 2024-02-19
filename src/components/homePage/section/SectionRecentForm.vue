@@ -17,11 +17,7 @@ import ControlButton from './ControlButton.vue'
 				</select>
 				<hr />
 				<ControlButton>
-					<img
-						src="../../../assets/icons/list-com.svg"
-						title="List view"
-						alt="List view"
-					/>
+					<img src="../../../assets/icons/list-com.svg" title="List view" alt="List view" />
 				</ControlButton>
 				<ControlButton>
 					<img src="../../../assets/icons/sort.svg" title="Add file" alt="Add file" />
@@ -93,7 +89,7 @@ option {
 	justify-content: space-evenly;
 	flex-direction: column;
 	font-size: var(--size-very-small-text);
-	p{
+	p {
 		margin: 10px 0 5px;
 	}
 	div {
