@@ -3,12 +3,20 @@
 	"version": "0.0.0",
 	"private": true,
 	"type": "module",
+	"packageManager": "pnpm@8.6.12",
+	"engines": {
+		"pnpm": "^8.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/WoodMechanics/wood-form.git"
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"lint": "eslint src/ --fix",
-		"format": "prettier --write src/"
+		"lint": "prettier --check . && eslint src/",
+		"test": "vitest run"
 	},
 	"dependencies": {
 		"vue": "^3.3.10",
