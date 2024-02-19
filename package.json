@@ -15,7 +15,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"lint": "prettier src/ --check . && eslint src/",
+		"lint": "prettier src/ --check && eslint src/",
 		"test": "vitest run"
 	},
 	"dependencies": {
