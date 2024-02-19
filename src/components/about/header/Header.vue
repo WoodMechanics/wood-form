@@ -4,16 +4,16 @@ import LinkButton from '../../common/LinkButton.vue'
 </script>
 
 <template>
-		<nav>
-			<div>
-				<a href="#overview">Overview</a>
-				<a href="#features">Features</a>
-			</div>
-			<div class="rightSide">
-				<RouterLink to="/sign-in">Sign In</RouterLink>
-				<LinkButton />
-			</div>
-		</nav>
+	<nav>
+		<div>
+			<a href="#overview">Overview</a>
+			<a href="#features">Features</a>
+		</div>
+		<div class="rightSide">
+			<RouterLink to="/sign-in">Sign In</RouterLink>
+			<LinkButton />
+		</div>
+	</nav>
 </template>
 
 <style>
@@ -35,7 +35,7 @@ a {
 	color: var(--color-text);
 	margin: 10px 40px;
 	font-size: 20px;
-	transition-duration: .5s;
+	transition-duration: 0.5s;
 
 	:hover {
 		transition-duration: 0.5s;
