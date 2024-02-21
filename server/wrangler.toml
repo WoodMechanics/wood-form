@@ -1,0 +1,4 @@
+name = "wood-form-backend"
+main = "src/index.js"
+compatibility_date = "2023-07-24"
+compatibility_flags = [ "nodejs_compat" ]
