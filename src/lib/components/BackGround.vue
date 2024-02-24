@@ -1,20 +1,20 @@
 <template>
-	<img src="../../../public/Icons/oak-leaf1.svg" alt="leaf" />
-	<img src="../../../public/Icons/oak-leaf2.svg" alt="leaf" />
-	<img src="../../../public/Icons/oak-leaf3.svg" alt="leaf" />
-	<img src="../../../public/Icons/oak-leaf4.svg" alt="leaf" />
-	<img src="../../../public/Icons/tree-leaf1.svg" alt="leaf" />
-	<img src="../../../public/Icons/tree-leaf2.svg" alt="leaf" />
-	<img src="../../../public/Icons/tree-leaf3.svg" alt="leaf" />
-	<img src="../../../public/Icons/tree-leaf4.svg" alt="leaf" />
-	<img src="../../../public/Icons/tree1.svg" alt="tree" />
-	<img src="../../../public/Icons/tree2.svg" alt="tree" />
-	<img src="../../../public/Icons/tree3.svg" alt="tree" />
-	<img src="../../../public/Icons/tree4.svg" alt="tree" />
-	<img src="../../../public/Icons/wood1.svg" alt="tree" />
-	<img src="../../../public/Icons/wood2.svg" alt="tree" />
-	<img src="../../../public/Icons/wood3.svg" alt="tree" />
-	<img src="../../../public/Icons/wood4.svg" alt="tree" />
+	<img src="../../../public/icons/oak-leaf1.svg" alt="leaf" />
+	<img src="../../../public/icons/oak-leaf2.svg" alt="leaf" />
+	<img src="../../../public/icons/oak-leaf3.svg" alt="leaf" />
+	<img src="../../../public/icons/oak-leaf4.svg" alt="leaf" />
+	<img src="../../../public/icons/tree-leaf1.svg" alt="leaf" />
+	<img src="../../../public/icons/tree-leaf2.svg" alt="leaf" />
+	<img src="../../../public/icons/tree-leaf3.svg" alt="leaf" />
+	<img src="../../../public/icons/tree-leaf4.svg" alt="leaf" />
+	<img src="../../../public/icons/tree1.svg" alt="tree" />
+	<img src="../../../public/icons/tree2.svg" alt="tree" />
+	<img src="../../../public/icons/tree3.svg" alt="tree" />
+	<img src="../../../public/icons/tree4.svg" alt="tree" />
+	<img src="../../../public/icons/wood1.svg" alt="tree" />
+	<img src="../../../public/icons/wood2.svg" alt="tree" />
+	<img src="../../../public/icons/wood3.svg" alt="tree" />
+	<img src="../../../public/icons/wood4.svg" alt="tree" />
 </template>
 
 <style scoped>
