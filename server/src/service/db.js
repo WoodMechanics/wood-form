@@ -1,12 +1,10 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { getConfig } from './config.js';
 
-const initializeDB = () => {
+let db;
+export const createClient = (token) => {
+	if (db) return db;
 	const config = getConfig();
-
-	return createClient(config['SUPABASE_URL'], config['SUPABASE_KEY']);
-};
-
-export const getDB = () => {
-	return initializeDB();
+	const headers = token ? { global: { headers: { Authorization: `Bearer ${token}` } } } : {};
+	return createSupabaseClient(config['SUPABASE_URL'], config['SUPABASE_KEY'], headers);
 };

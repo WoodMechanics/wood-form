@@ -1,31 +1,23 @@
-import { createError, createRouter, eventHandler } from 'h3';
-import { nestedRoute } from '../lib/nested_route';
+import { Hono } from 'hono';
+import { HTTPException } from 'hono/http-exception';
+import { createClient } from '../service/db.js';
 
-export default function (injection) {
-	const db = injection.db;
+export const form = new Hono();
 
-	const formRouter = createRouter();
+form.get('/', async (c) => {
+	const db = createClient(c.session);
 
-	formRouter.get(
-		'/',
-		eventHandler(async () => {
-			const { data: forms, error: formError } = await db.from('forms').select();
-			console.log(formError);
-			if (formError) {
-				throw createError({
-					status: 400,
-					message: 'Error at request to forms data',
-				});
-			}
-
-			return Response.json(forms);
-		}),
-	);
-
-	return nestedRoute('/api/forms', formRouter);
-}
-
-// TODO
+	const { data, error } = await db.from('forms').select();
+	if (error) {
+		throw new HTTPException(401, { message: formError });
+	}
+	return c.json(data);
+});
+form.post('/', async (c) => {
+	const body = await c.req.json();
+	return c.json(body);
+});
+// form.post('/', async (c) => {});
 
 // POST /api/forms
 // { "title": "New Form Title", "description": "Form Description" }

@@ -14,6 +14,9 @@ dependencies:
   h3:
     specifier: ^1.10.1
     version: 1.10.1
+  hono:
+    specifier: ^4.0.5
+    version: 4.0.5
 
 devDependencies:
   wrangler:
@@ -816,6 +819,11 @@ packages:
       ufo: 1.4.0
       uncrypto: 0.1.3
       unenv: 1.9.0
+    dev: false
+
+  /hono@4.0.5:
+    resolution: {integrity: sha512-6LEGL1Pf3+dLjVA0NJxAB/3FJ6S3W5qxd/XOG7Wl9YOrpMRZT9lt83R4Ojs8dO6GbAUSutI7zTyjStnSn9sbEg==}
+    engines: {node: '>=16.0.0'}
     dev: false
 
   /http-cache-semantics@4.1.1:
