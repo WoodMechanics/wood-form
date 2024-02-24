@@ -5,62 +5,23 @@ import { createClient } from '../service/db.js';
 export const form = new Hono();
 
 form.get('/', async (c) => {
-	const db = createClient();
+	const db = createClient(c.session);
 
 	const { data, error } = await db.from('forms').select();
 	if (error) {
-		throw new HTTPException(400, error);
+		throw new HTTPException(401, { message: formError });
 	}
 	return c.json(data);
 });
-
 form.post('/', async (c) => {
-	const db = createClient(c.session);
-
 	const body = await c.req.json();
-	const { title } = body;
-
-	if (!title) {
-		throw new HTTPException(400, { message: 'required field [title] is missing' });
-	}
-
-	const { data, error } = await db.from('forms').insert([{ title }]).select();
-
-	if (error) {
-		throw new HTTPException(400, error);
-	}
-
-	const remapFields = (item) => {
-		item['createdAt'] = item.created_at;
-		delete item.created_at;
-		item['formId'] = item.form_id;
-		delete item.form_id;
-		return item;
-	};
-
-	const remapedData = data.map(remapFields);
-
-	return c.json(remapedData);
+	return c.json(body);
 });
+// form.post('/', async (c) => {});
 
-form.delete('/', async (c) => {
-	const db = createClient(c.session);
-
-	const body = await c.req.json();
-	const { id } = body;
-
-	if (!id) {
-		throw new HTTPException(400, { message: 'required field [id] is missing' });
-	}
-
-	const { error } = await db.from('forms').delete().eq('form_id', id);
-
-	if (error) {
-		throw new HTTPException(400, error);
-	}
-
-	return c.json({ message: `Form deleted successfully` });
-});
+// POST /api/forms
+// { "title": "New Form Title", "description": "Form Description" }
+// { "id": "form_id", "title": "New Form Title", "description": "Form Description", "createdAt": "timestamp" }
 
 // Get Single Form Details
 // GET /api/forms/{formId}
