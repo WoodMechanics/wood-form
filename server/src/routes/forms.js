@@ -9,7 +9,7 @@ form.get('/', async (c) => {
 
 	const { data, error } = await db.from('forms').select();
 	if (error) {
-		throw new HTTPException(401, error);
+		throw new HTTPException(400, error);
 	}
 	return c.json(data);
 });
@@ -20,10 +20,14 @@ form.post('/', async (c) => {
 	const body = await c.req.json();
 	const { title } = body;
 
+	if (!title) {
+		throw new HTTPException(400, { message: 'required field [title] is missing' });
+	}
+
 	const { data, error } = await db.from('forms').insert([{ title }]).select();
 
 	if (error) {
-		throw new HTTPException(401, error);
+		throw new HTTPException(400, error);
 	}
 
 	const remapFields = (item) => {
@@ -38,11 +42,25 @@ form.post('/', async (c) => {
 
 	return c.json(remapedData);
 });
-// form.post('/', async (c) => {});
 
-// POST /api/forms
-// { "title": "New Form Title", "description": "Form Description" }
-// { "id": "form_id", "title": "New Form Title", "description": "Form Description", "createdAt": "timestamp" }
+form.delete('/', async (c) => {
+	const db = createClient(c.session);
+
+	const body = await c.req.json();
+	const { id } = body;
+
+	if (!id) {
+		throw new HTTPException(400, { message: 'required field [id] is missing' });
+	}
+
+	const { error } = await db.from('forms').delete().eq('form_id', id);
+
+	if (error) {
+		throw new HTTPException(400, error);
+	}
+
+	return c.json({ message: `Form deleted successfully` });
+});
 
 // Get Single Form Details
 // GET /api/forms/{formId}
