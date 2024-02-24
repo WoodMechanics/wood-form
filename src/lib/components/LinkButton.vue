@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<button class="mainLink">Go to Forms</button>
+	<RouterLink class="mainLink" to="/">Go to Forms</RouterLink>
 </template>
 
 <style scoped>

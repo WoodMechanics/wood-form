@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
 			<RouterLink to="/about">Overview</RouterLink>
 			<div class="inputarea">
 				<button type="submit">
-					<img src="../../../assets/icons/icons8-search.svg" alt="search" />
+					<img src="../../public/icons8-arrow-down-30.png" alt="search" />
 				</button>
 				<label><input type="text" placeholder="Search" /></label>
 			</div>

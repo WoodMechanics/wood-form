@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'WixMadeforDisplay';
-	src: url('../../assets/fonts/WixMadeforDisplay-Medium.ttf');
+	src: url('../../public/fonts/WixMadeforDisplay-Medium.ttf');
 }
 
 @font-face {
 	font-family: 'WixMadeforDisplay-Bold';
-	src: url('../../assets/fonts/WixMadeforDisplay-Bold.ttf');
+	src: url('../../public/fonts/WixMadeforDisplay-Bold.ttf');
 }
 
 :root {

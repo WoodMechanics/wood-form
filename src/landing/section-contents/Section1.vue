@@ -1,5 +1,5 @@
 <script setup>
-import LinkButton from '../../common/LinkButton.vue'
+import LinkButton from '../../lib/components/LinkButton.vue'
 </script>
 
 <template>

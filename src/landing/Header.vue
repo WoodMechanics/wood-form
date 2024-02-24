@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import LinkButton from '../../common/LinkButton.vue'
+import LinkButton from '../lib/components/LinkButton.vue'
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import LinkButton from '../../common/LinkButton.vue'
 			<a href="#features">Features</a>
 		</div>
 		<div class="rightSide">
-			<RouterLink to="/sign-in">Sign In</RouterLink>
+			<RouterLink class="" to="/sign-in">Sign In</RouterLink>
 			<LinkButton />
 		</div>
 	</nav>
@@ -45,5 +45,6 @@ a {
 .rightSide {
 	display: flex;
 	margin-right: 2%;
+	align-items: center;
 }
 </style>

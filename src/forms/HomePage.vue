@@ -1,9 +1,9 @@
 <script setup>
-import WoodMechanics from '../components/common/WoodMechanics.vue'
-import MainHeader from '../components/homePage/header/MainHeader.vue'
-import HomePageSection from '../components/homePage/section/HomePageSection.vue'
-import CreateForm from '../components/homePage/section/SectionCreateForm.vue'
-import RecentForm from '../components/homePage/section/SectionRecentForm.vue'
+import WoodMechanics from '../lib/components/WoodMechanics.vue'
+import MainHeader from './MainHeader.vue'
+import HomePageSection from './HomePageSection.vue'
+import CreateForm from './SectionCreateForm.vue'
+import RecentForm from './SectionRecentForm.vue'
 </script>
 
 <template>

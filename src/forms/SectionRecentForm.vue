@@ -17,13 +17,13 @@ import ControlButton from './ControlButton.vue'
 				</select>
 				<hr />
 				<ControlButton>
-					<img src="../../../assets/icons/list-com.svg" title="List view" alt="List view" />
+					<img src="../../public/icons/list-com.svg" title="List view" alt="List view" />
 				</ControlButton>
 				<ControlButton>
-					<img src="../../../assets/icons/sort.svg" title="Add file" alt="Add file" />
+					<img src="../../public/icons/sort.svg" title="Add file" alt="Add file" />
 				</ControlButton>
 				<ControlButton>
-					<img src="../../../assets/icons/folder-com.svg" title="Add file" alt="Add file" />
+					<img src="../../public/icons/folder-com.svg" title="Add file" alt="Add file" />
 				</ControlButton>
 			</div>
 		</div>
@@ -32,7 +32,7 @@ import ControlButton from './ControlButton.vue'
 				<div class="cardText">
 					<p>MyForm1</p>
 					<div>
-						<img src="../../../assets/icons/list.svg" alt="Form" />
+						<img src="../../public/icons/list.svg" alt="Form" />
 						<p><i>here goes date</i></p>
 					</div>
 				</div>
