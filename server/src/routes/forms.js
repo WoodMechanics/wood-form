@@ -9,13 +9,34 @@ form.get('/', async (c) => {
 
 	const { data, error } = await db.from('forms').select();
 	if (error) {
-		throw new HTTPException(401, { message: formError });
+		throw new HTTPException(401, error);
 	}
 	return c.json(data);
 });
+
 form.post('/', async (c) => {
+	const db = createClient(c.session);
+
 	const body = await c.req.json();
-	return c.json(body);
+	const { title } = body;
+
+	const { data, error } = await db.from('forms').insert([{ title }]).select();
+
+	if (error) {
+		throw new HTTPException(401, error);
+	}
+
+	const remapFields = (item) => {
+		item['createdAt'] = item.created_at;
+		delete item.created_at;
+		item['formId'] = item.form_id;
+		delete item.form_id;
+		return item;
+	};
+
+	const remapedData = data.map(remapFields);
+
+	return c.json(remapedData);
 });
 // form.post('/', async (c) => {});
 
