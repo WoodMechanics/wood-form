@@ -5,7 +5,7 @@ import { createClient } from '../service/db.js';
 export const form = new Hono();
 
 form.get('/', async (c) => {
-	const db = createClient(c.session);
+	const db = createClient();
 
 	const { data, error } = await db.from('forms').select();
 	if (error) {
