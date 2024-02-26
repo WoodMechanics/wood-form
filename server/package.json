@@ -1,19 +1,19 @@
 {
-  "name": "server",
-  "version": "0.0.0",
-  "private": true,
+	"name": "server",
+	"version": "0.0.0",
+	"private": true,
 	"type": "module",
 	"scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev"
-  },
-  "devDependencies": {
-    "wrangler": "^3.4.0"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.39.7",
-    "fastify": "^4.26.1",
-    "h3": "^1.10.1"
-  }
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify"
+	},
+	"devDependencies": {
+		"wrangler": "^3.4.0"
+	},
+	"dependencies": {
+		"@supabase/supabase-js": "^2.39.7",
+		"fastify": "^4.26.1",
+		"h3": "^1.10.1",
+		"hono": "^4.0.5"
+	}
 }
