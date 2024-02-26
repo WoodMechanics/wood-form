@@ -10,7 +10,7 @@ const tabsList = [
 	{
 		name: 'Constructor',
 		component: Constructor,
-		disabled: true
+		disabled: false
 	},
 	{
 		name: 'Answers',

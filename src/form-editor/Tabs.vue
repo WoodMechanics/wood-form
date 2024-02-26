@@ -13,8 +13,14 @@ const { tabs } = defineProps({
 	<TabGroup>
 		<div class="tabs-container">
 			<TabList>
-				<Tab v-slot="{ selected }" v-for="tab in tabs" as="template" :key="tab.name">
-					<button :disabled="tab.disabled" :class="{ active: selected }" class="tab-button">
+				<Tab
+					v-slot="{ selected }"
+					:disabled="tab.disabled"
+					v-for="tab in tabs"
+					as="template"
+					:key="tab.name"
+				>
+					<button :class="{ active: selected }" class="tab-button">
 						{{ tab.name }}
 					</button>
 				</Tab>
@@ -22,7 +28,7 @@ const { tabs } = defineProps({
 		</div>
 
 		<TabPanels class="tab-panels">
-			<TabPanel v-for="tab in tabs" :key="tab.name">
+			<TabPanel tabindex="-1" v-for="tab in tabs" :key="tab.name">
 				<component :is="tab.component" />
 			</TabPanel>
 		</TabPanels>
@@ -44,13 +50,9 @@ const { tabs } = defineProps({
 	background: transparent;
 	border: none;
 	padding: 8px;
-	transition: background-color 0.2s;
+	transition: box-shadow 0.15s ease-in-out;
 	border-bottom: 2px solid transparent;
 	outline: none;
-
-	&:focus-visible {
-		background: var(--color-background);
-	}
 
 	&.active {
 		border-bottom: 2px solid var(--primary);

@@ -1,22 +1,19 @@
 <script setup>
-import SectionBlock from './SectionBlock.vue'
+import FormTitleBlock from './FormTitleBlock.vue'
 </script>
 
 <template>
 	<div class="constructor-wrapper">
-		<SectionBlock>
-			<label>
-				<input placeholder="Form name" type="text" />
-			</label>
-			<label>
-				<input placeholder="description" type="text" />
-			</label>
-		</SectionBlock>
+		<FormTitleBlock />
 	</div>
 </template>
 
 <style scoped>
 .constructor-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 	margin-top: 12px;
 }
 </style>
