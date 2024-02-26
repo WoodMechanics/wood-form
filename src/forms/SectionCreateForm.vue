@@ -2,6 +2,7 @@
 import Gallery from './Gallery.vue'
 import CardBlock from './CardBlock.vue'
 import ControlButton from './ControlButton.vue'
+import LinkCardBlock from './LinkCardBlock.vue'
 </script>
 <template>
 	<main>
@@ -17,9 +18,9 @@ import ControlButton from './ControlButton.vue'
 			</div>
 		</div>
 		<Gallery>
-			<CardBlock>
+			<LinkCardBlock>
 				<p>Empty Form</p>
-			</CardBlock>
+			</LinkCardBlock>
 			<CardBlock>
 				<p>Contact information</p>
 			</CardBlock>
