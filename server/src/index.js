@@ -2,6 +2,9 @@ import { Hono } from 'hono';
 import { api } from './routes/api.js';
 import { auth } from './routes/auth.js';
 import { setConfig } from './service/config.js';
+import { log } from './Demo.res.mjs';
+
+log();
 
 const app = new Hono();
 

@@ -5,15 +5,20 @@
 	"type": "module",
 	"scripts": {
 		"dev": "wrangler dev",
-		"deploy": "wrangler deploy --minify"
+		"deploy": "wrangler deploy --minify",
+		"res:build": "rescript",
+		"res:clean": "rescript clean",
+		"res:dev": "rescript -w"
 	},
 	"devDependencies": {
 		"wrangler": "^3.4.0"
 	},
 	"dependencies": {
+		"@rescript/core": "^1.1.0",
 		"@supabase/supabase-js": "^2.39.7",
 		"fastify": "^4.26.1",
 		"h3": "^1.10.1",
-		"hono": "^4.0.5"
+		"hono": "^4.0.5",
+		"rescript": "^11.0.1"
 	}
 }

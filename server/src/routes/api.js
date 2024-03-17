@@ -7,6 +7,10 @@ export const api = new Hono();
 api.use('*', async (c, next) => {
 	const authHeader = c.req.header('Authorization');
 
+	if (!authHeader) {
+		throw new HTTPException(401, { message: 'Unauthorized' });
+	}
+
 	const getToken = (authHeader) => {
 		if (authHeader.startsWith('Bearer ')) {
 			return authHeader.substring(7, authHeader.length);
