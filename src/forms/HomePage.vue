@@ -1,14 +1,10 @@
 <script setup>
-import WoodMechanics from '../lib/components/WoodMechanics.vue'
-import MainHeader from './MainHeader.vue'
 import HomePageSection from './HomePageSection.vue'
 import CreateForm from './SectionCreateForm.vue'
 import RecentForm from './SectionRecentForm.vue'
 </script>
 
 <template>
-	<WoodMechanics />
-	<MainHeader />
 	<main>
 		<Section class="first"><CreateForm /></Section>
 		<HomePageSection><RecentForm /></HomePageSection>

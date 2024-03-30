@@ -1,8 +1,5 @@
 <script setup>
-import Header from './Header.vue'
-import BackGround from '../lib/components/BackGround.vue'
-import WoodMechanics from '../lib/components/WoodMechanics.vue'
-import Section from './Section.vue'
+import Section from './section.vue'
 import Section1 from './section-contents/Section1.vue'
 import Section2 from './section-contents/Section2.vue'
 import Section3 from './section-contents/Section3.vue'
@@ -12,10 +9,11 @@ import Section6 from './section-contents/Section6.vue'
 import Section7 from './section-contents/Section7.vue'
 import Section8 from './section-contents/Section8.vue'
 import Section9 from './section-contents/Section9.vue'
+import LandingHeader from './landing-header.vue'
 </script>
 
 <template>
-	<BackGround />
+	<landing-header />
 	<Header />
 	<main>
 		<Section id="overview">
@@ -45,7 +43,6 @@ import Section9 from './section-contents/Section9.vue'
 		<Section class="section9">
 			<Section9 />
 		</Section>
-		<WoodMechanics />
 	</main>
 </template>
 

@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './forms/HomePage.vue'
-import AboutPage from './landing/AboutPage.vue'
+import AboutPage from './landing/about-page.vue'
 import SignInPage from './authorisation/SignInPage.vue'
 import NewForm from './form-editor/NewForm.vue'
 import ConstructorPage from './form-editor/FormEditPage.vue'
