@@ -5,39 +5,37 @@ import ControlButton from './ControlButton.vue'
 import LinkCardBlock from './LinkCardBlock.vue'
 </script>
 <template>
-	<main>
-		<div class="heading">
-			<h4>Create a Form</h4>
-			<div class="leftPart">
-				<ControlButton>
-					<h4>Template Gallery</h4>
-					<img src="../../public/icons/scroll-templates.svg" alt="scroll" />
-				</ControlButton>
-				<hr />
-				<ControlButton><img src="../../public/icons/menu-dots.svg" alt="menu" /></ControlButton>
-			</div>
+	<div class="heading">
+		<h4>Create a Form</h4>
+		<div class="leftPart">
+			<ControlButton>
+				<h4>Template Gallery</h4>
+				<img src="../../public/icons/scroll-templates.svg" alt="scroll" />
+			</ControlButton>
+			<hr />
+			<ControlButton><img src="../../public/icons/menu-dots.svg" alt="menu" /></ControlButton>
 		</div>
-		<Gallery>
-			<LinkCardBlock>
-				<p>Empty Form</p>
-			</LinkCardBlock>
-			<CardBlock>
-				<p>Contact information</p>
-			</CardBlock>
-			<CardBlock>
-				<p>Invitation response</p>
-			</CardBlock>
-			<CardBlock>
-				<p>Party invitation</p>
-			</CardBlock>
-			<CardBlock>
-				<p>Shopping ordering</p>
-			</CardBlock>
-			<CardBlock>
-				<p>Event registration</p>
-			</CardBlock>
-		</Gallery>
-	</main>
+	</div>
+	<Gallery>
+		<LinkCardBlock>
+			<p>Empty Form</p>
+		</LinkCardBlock>
+		<CardBlock>
+			<p>Contact information</p>
+		</CardBlock>
+		<CardBlock>
+			<p>Invitation response</p>
+		</CardBlock>
+		<CardBlock>
+			<p>Party invitation</p>
+		</CardBlock>
+		<CardBlock>
+			<p>Shopping ordering</p>
+		</CardBlock>
+		<CardBlock>
+			<p>Event registration</p>
+		</CardBlock>
+	</Gallery>
 </template>
 
 <style scoped>

@@ -5,40 +5,38 @@ import ControlButton from './ControlButton.vue'
 </script>
 
 <template>
-	<main>
-		<div class="heading">
-			<h4>Recent Forms</h4>
-			<div class="ownerSelect">
-				<label for="forms"><h4>Owner :</h4></label>
-				<select id="forms">
-					<option value="user">Personal</option>
-					<option value="public">Public</option>
-					<option value="all" selected>All</option>
-				</select>
-				<hr />
-				<ControlButton>
-					<img src="../../public/icons/list-com.svg" title="List view" alt="List view" />
-				</ControlButton>
-				<ControlButton>
-					<img src="../../public/icons/sort.svg" title="Add file" alt="Add file" />
-				</ControlButton>
-				<ControlButton>
-					<img src="../../public/icons/folder-com.svg" title="Add file" alt="Add file" />
-				</ControlButton>
-			</div>
+	<div class="heading">
+		<h4>Recent Forms</h4>
+		<div class="ownerSelect">
+			<label for="forms"><h4>Owner :</h4></label>
+			<select id="forms">
+				<option value="user">Personal</option>
+				<option value="public">Public</option>
+				<option value="all" selected>All</option>
+			</select>
+			<hr />
+			<ControlButton>
+				<img src="../../public/icons/list-com.svg" title="List view" alt="List view" />
+			</ControlButton>
+			<ControlButton>
+				<img src="../../public/icons/sort.svg" title="Add file" alt="Add file" />
+			</ControlButton>
+			<ControlButton>
+				<img src="../../public/icons/folder-com.svg" title="Add file" alt="Add file" />
+			</ControlButton>
 		</div>
-		<Gallery>
-			<CardBlock>
-				<div class="cardText">
-					<p>MyForm1</p>
-					<div>
-						<img src="../../public/icons/list.svg" alt="Form" />
-						<p><i>here goes date</i></p>
-					</div>
+	</div>
+	<Gallery>
+		<CardBlock>
+			<div class="cardText">
+				<p>MyForm1</p>
+				<div>
+					<img src="../../public/icons/list.svg" alt="Form" />
+					<p><i>here goes date</i></p>
 				</div>
-			</CardBlock>
-		</Gallery>
-	</main>
+			</div>
+		</CardBlock>
+	</Gallery>
 </template>
 
 <style scoped>

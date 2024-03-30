@@ -5,10 +5,8 @@ import RecentForm from './SectionRecentForm.vue'
 </script>
 
 <template>
-	<main>
-		<Section class="first"><CreateForm /></Section>
-		<HomePageSection><RecentForm /></HomePageSection>
-	</main>
+	<Section class="first"><CreateForm /></Section>
+	<HomePageSection><RecentForm /></HomePageSection>
 </template>
 
 <style scoped>

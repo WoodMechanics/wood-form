@@ -15,35 +15,33 @@ import LandingHeader from './landing-header.vue'
 <template>
 	<landing-header />
 	<Header />
-	<main>
-		<Section id="overview">
-			<Section1 />
-		</Section>
-		<Section class="section2">
-			<Section2 />
-		</Section>
-		<Section id="features">
-			<Section3 />
-		</Section>
-		<Section>
-			<Section4 />
-		</Section>
-		<Section>
-			<Section5 />
-		</Section>
-		<Section>
-			<Section6 />
-		</Section>
-		<Section class="section7">
-			<Section7 />
-		</Section>
-		<Section class="section8">
-			<Section8 />
-		</Section>
-		<Section class="section9">
-			<Section9 />
-		</Section>
-	</main>
+	<Section id="overview">
+		<Section1 />
+	</Section>
+	<Section class="section2">
+		<Section2 />
+	</Section>
+	<Section id="features">
+		<Section3 />
+	</Section>
+	<Section>
+		<Section4 />
+	</Section>
+	<Section>
+		<Section5 />
+	</Section>
+	<Section>
+		<Section6 />
+	</Section>
+	<Section class="section7">
+		<Section7 />
+	</Section>
+	<Section class="section8">
+		<Section8 />
+	</Section>
+	<Section class="section9">
+		<Section9 />
+	</Section>
 </template>
 
 <style>
