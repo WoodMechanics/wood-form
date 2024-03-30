@@ -28,16 +28,5 @@
 	h4 {
 		font-size: var(--size-third-title);
 	}
-	.image {
-		margin: 0 50px;
-		height: 75%;
-		flex: 3;
-		background-color: var(--color-unknown-image);
-		border-radius: 7px;
-		box-shadow: 0 2px 15px #181818;
-	}
-	.phoneImg {
-		flex: 1;
-	}
 }
 </style>

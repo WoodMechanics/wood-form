@@ -1,6 +1,6 @@
 <script setup>
-import BaseInput from '../../lib/BaseInput.vue'
-import SectionBlock from './SectionBlock.vue'
+import BaseInput from '../../lib/base-input.vue'
+import SectionBlock from './section-block.vue'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-import FormTitleBlock from './FormTitleBlock.vue'
+import FormTitleBlock from './title-block.vue'
 </script>
 
 <template>

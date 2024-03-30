@@ -1,10 +1,10 @@
 <script setup>
-import Title from './Title.vue'
-import Controls from './Controls.vue'
-import Tabs from './Tabs.vue'
-import Constructor from './constructor/Constructor.vue'
-import Answers from './answers/Answers.vue'
-import Settings from './settings/Settings.vue'
+import Title from './constructor-title.vue'
+import Controls from './form-controls.vue'
+import Tabs from './constructor-tabs.vue'
+import Constructor from './constructor/form-constructor.vue'
+import Answers from './answers/form-answer.vue'
+import Settings from './settings/form-settings.vue'
 
 const tabsList = [
 	{
