@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './forms/HomePage.vue'
 import AboutPage from './landing/about-page.vue'
-import SignInPage from './authorisation/SignInPage.vue'
 import NewForm from './form-editor/NewForm.vue'
 import ConstructorPage from './form-editor/FormEditPage.vue'
+import SignUpPage from './authorisation/sign-up-page.vue'
+import SignInPage from './authorisation/sign-in-page.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,11 +20,6 @@ const router = createRouter({
 			component: AboutPage
 		},
 		{
-			path: '/sign-in',
-			name: 'sign-in',
-			component: SignInPage
-		},
-		{
 			path: '/new-form',
 			name: 'new-form',
 			component: NewForm
@@ -32,6 +28,16 @@ const router = createRouter({
 			path: '/form/:id/edit',
 			name: 'edit-form',
 			component: ConstructorPage
+		},
+		{
+			path: '/sign-in',
+			name: 'sign-in',
+			component: SignInPage
+		},
+		{
+			path: '/sign-up',
+			name: 'sign-up',
+			component: SignUpPage
 		}
 	]
 })
