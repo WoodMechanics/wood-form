@@ -1,5 +1,5 @@
 <script setup>
-import HeaderLogo from './header/header-logo.vue'
+import HeaderLogo from '../header/header-logo.vue'
 import HeaderNavigation from './header/header-navigation.vue'
 import HeaderSignIn from './header/sign-in.vue'
 import GoToForms from './header/go-to-forms.vue'

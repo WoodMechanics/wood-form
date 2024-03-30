@@ -7,13 +7,3 @@ import { RouterView } from 'vue-router'
 		<RouterView />
 	</main>
 </template>
-
-<style scoped>
-main {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-</style>

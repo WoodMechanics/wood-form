@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from './forms/HomePage.vue'
-import AboutPage from './landing/about-page.vue'
+import HomePage from './forms/home-page.vue'
+import LandingPage from './landing/landing-page.vue'
 import NewForm from './form-editor/NewForm.vue'
 import ConstructorPage from './form-editor/FormEditPage.vue'
 import SignUpPage from './authorisation/sign-up-page.vue'
@@ -17,7 +17,7 @@ const router = createRouter({
 		{
 			path: '/about',
 			name: 'about',
-			component: AboutPage
+			component: LandingPage
 		},
 		{
 			path: '/new-form',

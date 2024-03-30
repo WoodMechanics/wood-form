@@ -14,7 +14,6 @@ import LandingHeader from './landing-header.vue'
 
 <template>
 	<landing-header />
-	<Header />
 	<Section id="overview">
 		<Section1 />
 	</Section>
@@ -45,14 +44,6 @@ import LandingHeader from './landing-header.vue'
 </template>
 
 <style>
-main {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .section2 {
 	height: 100px;
 	margin: 30px 0;
