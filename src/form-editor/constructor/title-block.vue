@@ -1,15 +1,15 @@
 <script setup>
-import BaseInput from '../../lib/base-input.vue'
 import SectionBlock from './section-block.vue'
+import WInput from '../../authorisation/input/w-input.vue'
 </script>
 
 <template>
-	<SectionBlock>
+	<section-block>
 		<div class="title-container">
-			<BaseInput class="name-input" placeholder="Form name" />
-			<BaseInput class="description-input" placeholder="description" />
+			<w-input class="name-input" placeholder="Form name" />
+			<w-input class="description-input" placeholder="description" />
 		</div>
-	</SectionBlock>
+	</section-block>
 </template>
 
 <style scoped>
