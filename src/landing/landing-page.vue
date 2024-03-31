@@ -1,68 +1,97 @@
 <script setup>
-import Section from './section.vue'
-import Section1 from './section-contents/Section1.vue'
-import Section2 from './section-contents/Section2.vue'
-import Section3 from './section-contents/Section3.vue'
-import Section4 from './section-contents/Section4.vue'
-import Section5 from './section-contents/Section5.vue'
-import Section6 from './section-contents/Section6.vue'
-import Section7 from './section-contents/Section7.vue'
-import Section8 from './section-contents/Section8.vue'
-import Section9 from './section-contents/Section9.vue'
 import LandingHeader from './landing-header.vue'
+import LandingSection from './landing-section.vue'
+import WLink from '../lib/w-link.vue'
 </script>
 
 <template>
 	<landing-header />
-	<Section id="overview">
-		<Section1 />
-	</Section>
-	<Section class="section2">
-		<Section2 />
-	</Section>
-	<Section id="features">
-		<Section3 />
-	</Section>
-	<Section>
-		<Section4 />
-	</Section>
-	<Section>
-		<Section5 />
-	</Section>
-	<Section>
-		<Section6 />
-	</Section>
-	<Section class="section7">
-		<Section7 />
-	</Section>
-	<Section class="section8">
-		<Section8 />
-	</Section>
-	<Section class="section9">
-		<Section9 />
-	</Section>
+
+	<landing-section id="overview">
+		<div>
+			<h2>Get insights quickly, with Wood-Forms</h2>
+			<p>Easily create and share online forms and surveys, and analyze responses in real-time.</p>
+		</div>
+		<div class="image" />
+	</landing-section>
+
+	<p class="what-can-do">See what you can do with Wood-Forms</p>
+
+	<landing-section id="features">
+		<div class="image" />
+
+		<div>
+			<h2>Create an online form as easily as creating a document</h2>
+			<p>
+				Select from multiple question types, drag-and-drop to reorder questions, and customize
+				values as easily as pasting a list.
+			</p>
+		</div>
+	</landing-section>
+	<landing-section>
+		<div>
+			<h2>Send polished surveys and forms</h2>
+			<p>
+				Customize colors, images, and fonts to adjust the look and feel or reflect your
+				organization's branding. And add custom logic that shows questions based on answers, for a
+				more seamless experience.
+			</p>
+		</div>
+		<div class="image" />
+	</landing-section>
+
+	<landing-section>
+		<div class="image" />
+		<div>
+			<h2>Analyze responses with automatic summaries</h2>
+			<p>
+				See charts with response data update in real-time. Or open the raw data with Google Sheets
+				for deeper analysis or automation.
+			</p>
+		</div>
+	</landing-section>
+
+	<landing-section id="security">
+		<div>
+			<h2>Create and respond to surveys from anywhere</h2>
+			<p>
+				Access, create, and edit forms on-the-go, from screens big and small. Others can respond to
+				your survey from wherever they are—from any mobile device, tablet, or computer.
+			</p>
+		</div>
+		<div class="image" />
+	</landing-section>
+
+	<div class="start">
+		<h2>Ready to get started?</h2>
+		<div class="start-link">
+			<w-link link="/">Go To Forms</w-link>
+		</div>
+	</div>
 </template>
 
 <style>
-.section2 {
-	height: 100px;
-	margin: 30px 0;
+#overview {
 }
-.section7 {
-	height: 300px;
-	padding: 100px 0;
-	align-items: flex-start;
-	text-align: justify;
+.what-can-do {
+	text-align: center;
 }
-.section8,
-.section9 {
-	flex-direction: column;
-	align-items: center;
-	flex: none;
+
+.image {
+	border: 1px solid var(--color-text);
+	background: white;
+	width: 700px;
+	height: 450px;
 }
-.section9 {
-	margin-top: 70px;
-	padding-bottom: 80px;
-	height: fit-content;
+
+.start {
+	height: 200px;
+	display: grid;
+	place-content: center;
+
+	.start-link {
+		display: flex;
+		justify-content: center;
+	}
 }
 </style>
