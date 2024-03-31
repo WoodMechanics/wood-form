@@ -1,3 +1,5 @@
+name: Wrangler
+
 on:
   push:
     branches:
