@@ -27,7 +27,12 @@ async function login() {
 		<authorisation-logo />
 		<form @submit.prevent="login">
 			<w-input email label="Email" v-model="email" />
-			<w-input label="Password" v-model="password" />
+			<w-input
+				type="password"
+				autocomplete="current-password"
+				label="Password"
+				v-model="password"
+			/>
 			<button type="submit">Sign In</button>
 		</form>
 

@@ -1,19 +1,16 @@
 <script setup>
-import { ref } from 'vue'
-
-const { value, label, email } = defineProps({
+const model = defineModel()
+defineProps({
 	value: String,
 	label: String,
-	email: Boolean
+	status: Boolean
 })
-
-const type = ref(email ? 'email' : 'text')
 </script>
 
 <template>
 	<label>
 		{{ label }}
-		<input @input="$emit('input', $event)" :value="value" :type="type" />
+		<input v-model="model" v-bind="$attrs" :class="{ invalid: !status }" />
 		<span class="after-input">
 			<slot name="after" />
 		</span>
@@ -37,5 +34,9 @@ label {
 	font-weight: 300;
 	font-size: 14px;
 	font-family: WixMadeforDisplay, serif;
+}
+
+.invalid {
+	outline: 1px solid red;
 }
 </style>
