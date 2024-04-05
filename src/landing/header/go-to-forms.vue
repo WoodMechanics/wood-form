@@ -1,5 +1,5 @@
 <script setup>
-import WLink from '../../lib/w-link.vue'
+import WLink from '../../lib/ui/w-link.vue'
 </script>
 
 <template>

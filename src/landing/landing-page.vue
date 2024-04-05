@@ -1,7 +1,7 @@
 <script setup>
 import LandingHeader from './landing-header.vue'
 import LandingSection from './landing-section.vue'
-import WLink from '../lib/w-link.vue'
+import WLink from '../lib/ui/w-link.vue'
 </script>
 
 <template>
